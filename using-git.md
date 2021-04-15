@@ -19,7 +19,7 @@ git pull
 git checkout my-feature-branch
 git merge master
 ```
-5. When your feature feels done (i.e. you have completed all the acceptance criteria), push to github and open a pull request to merge the changes into master
+5. When your feature feels done, push to github and open a pull request to merge the changes into master
 
 ### Resolving Merge Conflicts
 Merge conflicts will arise -- its part of working on a team -- you can't avoid working on the same files occasionally. This is why its important to pull master and merge it into your feature branch often. 

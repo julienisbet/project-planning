@@ -13,6 +13,7 @@ name| String | None
 lastWatered| Date | None
 maxWaterLevel| Integer (Number)| 5
 currentWaterLevel| Integer (Number) | 0
+imageURL|String|None
 
 <br>
 Sample Plant Object:
@@ -23,14 +24,16 @@ Sample Plant Object:
     name: "Larkspur",
     lastWatered: new Date(),
     maxWaterLevel: 5,
-    currentWaterLevel: 0
+    currentWaterLevel: 0,
+    imageURL: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F03%2Fblue-larkspur-consolida-469d396f.jpg",
+
 }
 ```
 
 ### Events
 1. On load
    * Check if there are any plants in local storage, if not, load the seed data
-2. On click -- "Add New Plant" -- can just be a normal link to `/add`
+2. On click -- "Add New Plant" -- can just be a normal link to `/new`
 3. On click -- "Remove plant"
 3. On submit -- Plant Form
    * Add plant to local storage with defaults for waterLevel
@@ -41,6 +44,9 @@ Note: These are simply in a list form right now, but you may want to create Gith
 - [ ] Create and export an array of plant objects to be loaded into local storage when the page loads -- save as plants
 - [ ] Write a function called `loadData` that first checks if there is any data in local storage -- if there is data, do nothing, if there's no data, load the seed data
 - [ ] local storage key will be `PLANTS`
+- [ ] create utils.js functions:
+    * getPlantById: returns plant with specific ID from localStorage
+    * getPlants: returns array of plants from localStorage
 
 ### Home Page
 - [ ] Loop through each plant in local storage and display the plant information (do not worry about wiring up the click events -- just focus on the display)
