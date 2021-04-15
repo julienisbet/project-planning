@@ -62,12 +62,7 @@ Note: These are simply in a list form right now, but you may want to create Gith
 - [ ] Wire up the event listeners
 
 ### Add New
-- [ ] Create the HTML form including inputs for plant name and image url and a submit button
-- [ ] Create a function for the submit event listener
-   * functionName: `addNewPlant`
-   * retrieves the user input from the form
-   * adds a new plant to local storage
-- [ ] Wire up the submit button to call `addNewPlant` and then redirect back to the homepage
+__TODO__
 
 ### Bonus Features
 - [ ] Display if the plant is over or under watered -- over watered is if its over the maxWaterLevel, under watered is if the level is below 2
